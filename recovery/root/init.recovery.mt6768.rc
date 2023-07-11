@@ -1,0 +1,10 @@
+on init
+    setprop sys.usb.configfs 1
+    setprop sys.usb.ffs.aio_compat 1
+    chown system system /sys/bus/platform/drivers/mtk-kpd/kpd_long_press_is_reboot
+    # write  /sys/bus/platform/drivers/mtk-kpd/kpd_long_press_is_reboot 0
+
+on boot
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
