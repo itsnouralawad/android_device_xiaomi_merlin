@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.enableswap \
+    fsrab.mt6768 \
     meta_init.connectivity.rc \
     init.project.rc \
     meta_init.rc \
