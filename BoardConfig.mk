@@ -24,6 +24,9 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := merlin,merlin_eea,merlinnfc
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := merlin
 TARGET_NO_BOOTLOADER := true
