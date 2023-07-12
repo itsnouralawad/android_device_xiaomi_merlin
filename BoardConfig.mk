@@ -62,6 +62,11 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
