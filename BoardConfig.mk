@@ -191,5 +191,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+
 # Inherit the proprietary files
 include vendor/xiaomi/merlin/BoardConfigVendor.mk
