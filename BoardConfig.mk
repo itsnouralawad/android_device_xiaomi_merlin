@@ -6,32 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/merlin
 
-# Audio
-PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
-    android.hardware.audio@7.0-impl:32
-    
-PRODUCT_PACKAGES += \
-    android.hardware.audio.common-util.vendor \
-    android.hardware.audio.common@5.0.vendor \
-    android.hardware.audio.common@6.0-util.vendor \
-    android.hardware.audio.common@6.0.vendor \
-    android.hardware.audio.common@7.0-enums.vendor \
-    android.hardware.audio.common@7.0-util.vendor \
-    android.hardware.audio.effect@7.0.vendor \
-    android.hardware.audio@6.0.vendor \
-    android.hardware.audio@7.0-util.vendor \
-    android.hardware.audio@7.0.vendor \
-    android.hardware.audio.effect@7.0-impl:32
-
-PRODUCT_PACKAGES += \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
-    audio_policy.stub \
-    libaudiofoundation.vendor \
-    libaudiopreprocessing.vendor
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -47,38 +21,12 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth@1.1.vendor
-
-PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    libbluetooth_audio_session
 
 #Build broken files
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
-
-# CAS
-PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service-lazy
-
-# Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64
-
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey \
-    android.hardware.drm@1.4.vendor
-
-PRODUCT_PACKAGES += \
-    libdrmclearkeyplugin \
-    libmockdrmcryptoplugin
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
