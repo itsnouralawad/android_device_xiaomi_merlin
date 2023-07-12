@@ -9,13 +9,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from merlin device
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
 PRODUCT_DEVICE := merlin
-PRODUCT_NAME := lineage_merlin
+PRODUCT_NAME := aosp_merlin
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := merlin
 PRODUCT_MANUFACTURER := xiaomi
