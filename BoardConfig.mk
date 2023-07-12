@@ -6,6 +6,28 @@
 
 DEVICE_PATH := device/xiaomi/merlin
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.common-util.vendor \
+    android.hardware.audio.common@5.0.vendor \
+    android.hardware.audio.common@6.0-util.vendor \
+    android.hardware.audio.common@6.0.vendor \
+    android.hardware.audio.common@7.0-enums.vendor \
+    android.hardware.audio.common@7.0-util.vendor \
+    android.hardware.audio.effect@7.0.vendor \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio@7.0-util.vendor \
+    android.hardware.audio@7.0.vendor \
+    android.hardware.audio.effect@7.0-impl:32
+
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
+    libaudiofoundation.vendor \
+    libaudiopreprocessing.vendor
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
