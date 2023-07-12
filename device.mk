@@ -60,6 +60,20 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin    
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor:64 \
+    libkeymaster4.vendor:64 \
+    libkeymaster41.vendor:64 \
+    libkeymaster4support.vendor:64 \
+    libkeymaster_messages.vendor:64 \
+    libkeymaster_portable.vendor:64 \
+    libkeystore-engine-wifi-hidl:64 \
+    libkeystore-wifi-hidl \
+    libkeymaster4support.vendor:64 \
+    libkeymaster4_1support.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
