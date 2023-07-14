@@ -105,6 +105,12 @@ PRODUCT_PACKAGES += \
     libkeymaster4_1support.vendor:64 \
     libpuresoftkeymasterdevice.vendor:64
 
+# Neural
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.3.vendor
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
