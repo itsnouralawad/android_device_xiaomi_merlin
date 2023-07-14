@@ -125,6 +125,14 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMerlin \
+    FrameworksResOverlayMerlin \
+    SystemUIOverlayMerlin \
+    TelephonyOverlayMerlin \
+    TetheringConfigOverlayMerlin \
+    WifiOverlayMerlin
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
