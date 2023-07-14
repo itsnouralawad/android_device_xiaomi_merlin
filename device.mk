@@ -256,6 +256,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service-awinic
 
 #WIFI
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy.mt6768
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
