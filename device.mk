@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor:64 \
     android.hardware.gnss@2.1.vendor:64
 
+# IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor:64 \
