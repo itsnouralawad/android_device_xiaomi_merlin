@@ -297,7 +297,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service-awinic
+    android.hardware.vibrator-service.mediatek
 
 #WIFI
 PRODUCT_PACKAGES += \
