@@ -99,6 +99,17 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.c2@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_vndk.vendor \
+    libavservices_minijail.vendor \
+    libsfplugin_ccodec_utils.vendor 
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor:64 \
