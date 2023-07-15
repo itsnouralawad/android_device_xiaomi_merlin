@@ -1251,4 +1251,12 @@ service PcbaConfigSet /system/vendor/bin/PcbaConfigSet
 
 on property:odm.audio.typec.status=*
     setprop vendor.audio.typec.status ${odm.audio.typec.status}
+    
+# Offline Charging daemon
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    capabilities SYS_BOOT
+    #seclabel u:r:charger:s0    
 
