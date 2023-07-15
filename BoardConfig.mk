@@ -139,6 +139,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
