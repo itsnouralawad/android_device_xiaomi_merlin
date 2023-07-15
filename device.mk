@@ -283,6 +283,10 @@ PRODUCT_COPY_FILES += \
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+    
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_vtservice
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
