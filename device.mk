@@ -4,6 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/mediatek \
+    hardware/xiaomi
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
