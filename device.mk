@@ -288,6 +288,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
