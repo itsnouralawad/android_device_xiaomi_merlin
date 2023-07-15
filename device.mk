@@ -329,7 +329,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
+    libavservices_minijail \
+    libavservices_minijail.vendor   
     
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
