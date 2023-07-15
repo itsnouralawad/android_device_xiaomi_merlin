@@ -88,6 +88,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
 
+# Text classifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
